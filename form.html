@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            form
+        </title>
+        <style>
+            body{
+                background-image: linear-gradient(to left,rgb(118, 201, 229),rgb(75, 66, 132));
+         }
+            .button{
+                padding: 10px;
+               border-radius: 10px;
+               margin-right: 20px;
+               border-color: brown;
+               background-color: white;
+               color:rgb(135, 168, 221);
+               right: 10;   
+            }
+            .button:hover{
+                background-color: rgb(24, 24, 189);
+                color: white;
+            }
+            .mainmain{
+                position: absolute;
+                left: 300px;
+             
+            }
+            .main{
+                background-color: rgba(126, 231, 192,0.2);
+          margin-top: 30px;
+                height: 750px;
+                width: 820px;
+               border-radius: 20px;
+             }
+            .f{
+                position: absolute;
+                background-color: rgba(17, 14, 10, 0.1);
+              top:70px;
+              left: 30px;
+              width: 300px;
+              height: 670px;
+              border-radius: 10px;
+              padding-top: 30px;
+              padding-left: 10%;
+            }
+            .tbox{
+                border-radius: 10px;
+                height: 30px;
+                width: 230px;
+            margin-right: 70px;
+           
+            border-color: green;
+            }
+            .left{ position: absolute;
+                background-color: rgba(17, 14, 10, 0.1);
+              top:70px;
+              left: 400px;
+              width: 300px;
+              height: 670px;
+              border-radius: 10px;
+              padding-top: 30px;
+              padding-left: 10%;
+            }
+            .sub{
+                left: 10%;
+            }
+            .mainmain small{
+                color: brown;
+                padding-left: 30%;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="mainmain">
+           <div class="main">
+        <center style="font-size:30px;">Registration Form</center>
+        <div class="f">
+            <form action="vk.php" method="post" name="form" id="form" class="form">
+            First Name :<br><br>
+            <input type="text" name='firstname' id="firstname" onkeypress="fn();" class="tbox" placeholder="First Name"><br>    
+            <small>Please enter the vaild name
+                </small><br><br>
+                <i class="fas fan-check-circle" ></i>
+                Last Name :<br><br>
+                <input type="text" class="tbox" id="lastname" placeholder="Last Name"><br><small>enter your last name</small><br><br>
+                country:<br>
+                    <select class="tbox" id="country">
+                        <option>INDIA</option>
+                        <option>USA</option>
+                        </select><br><br>
+            Email :<br><br>
+           <input type="text" class="tbox" id="email" placeholder="Email"><br><small>enter valid email</small><br><br>
+            Password :
+            <br><Br>
+            <input type="password" class="tbox" id="password" placeholder="Password"><small>Least 8 chetricts </small><img src='1.png' width="15px"><br><br>
+            DOB :<BR><BR>
+            <input type="date" class="tbox" id="dob"><Br> <small>your must 18 old</small><br><BR>
+            Gender :
+           <br><Br>
+            Male : <input type="radio"name='vk'>
+            Female : <input type="radio" name="vk">
+            Others : <input type="radio" name="vk">
+            <br><br>
+    </div>
+        <div class="left">
+            Middle Name :<br><Br>
+            <input type="text" class="tbox" id="middlename"><br><small>Enter valid middlename</small><br><br>
+            FULL Name :<br><br>
+            <input type="text" class="tbox" id="fullname"><br><small>Your fullname</small><Br><br>
+            Phone Number :<br><br>
+            <input type="tel" class="tbox" id="ph"><br><small>enter your valid number</small><br><br>
+            Address :
+            <br><br>
+            <textarea name="" class="tbox" cols="30" rows="10" id="address"></textarea><BR><BR>
+            Confirm Password :
+            <br><Br>
+            <input type="password" class="tbox" id="password2"><br><small>enter password doesnt Match</small><br><Br>
+        <cemter>Hobbies :</cemter>
+           <br><Br>
+          Reading: <input type="checkbox" >
+          playing  : <input type="checkbox">
+          watching TV : <input type="checkbox">
+          <Br><small>Tick At least two hobbies</small><br><br>
+       Upload your photo<br><small>Upload pic below 50kb</small>
+         <input type="file" accept="image/*" id="upload"><br>
+</div>
+         </div> <center> <input type="checkbox" >I agree all terms and conditions of company<br><br>
+                    <input type="reset"  value="reset" class="button">
+                    <input type="submit" value="submit" class="button">  </center>           </form>     
+        </div>
+</div>
+<script>
+   const form =document.getElementById('form');
+   const firstname =document.getElementById('firstname');
+   const middlename =document.getElementById('middlename');
+   const lastname=document.getElementById('lastname');
+   const country =document.getElementById('country'); 
+   const ph =document.getElementById('ph');
+   const email =document.getElementById('email');
+   const address =document.getElementById('address');
+   const password =document.getElementById('password');
+   const password2 =document.getElementById('password2');
+   const dob =document.getElementById('dob');
+   const hobbies =document.getElementById('hobbies');
+   const gender=document.getElementById('gender');
+   const uplad=document.getElementById('uplad');
+    </script>
+    
+    
+    </body>
+
+
+
+
+  
+</html>
